@@ -1,11 +1,11 @@
-# pumpAPI Guide
+# pumpAPI Guide - pump.fun API & pumpfun API
+
+A production-ready Python library and guide for interacting with Pump.fun tokens on Solana. Built for quant traders, developers, and researchers building automated trading systems.
 
 Comprehensive guide and framework for building trading bots on Solana using pumpAPI.
 
 [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
-A production-ready Python library and guide for interacting with Pump.fun tokens on Solana. Built for quant traders, developers, and researchers building automated trading systems.
 
 ## Features
 
