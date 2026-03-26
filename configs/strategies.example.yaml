@@ -1,0 +1,55 @@
+# Example Strategy Configuration
+# Copy to strategies.yaml and customize
+
+version: "1.0"
+
+strategies:
+  whale_tracker:
+    enabled: true
+    config:
+      whales:
+        - "WALLET_ADDRESS_1"
+        - "WALLET_ADDRESS_2"
+      min_size_sol: 10.0
+      auto_copy: false
+      position_size: 0.1
+      watch_tokens: []
+
+  volume_spike:
+    enabled: false
+    config:
+      spike_threshold: 5.0
+      lookback_minutes: 5
+      min_volume_sol: 10.0
+      position_size: 0.1
+
+  migration:
+    enabled: false
+    config:
+      migration_cap: 25000.0
+      pre_migration_cap: 20000.0
+      position_size: 0.2
+      check_interval_seconds: 30
+
+  cross_pool_arb:
+    enabled: false
+    config:
+      min_profit_bps: 50
+      max_position_sol: 0.5
+      check_interval_seconds: 2
+      raydium_pool: ""
+
+risk_management:
+  max_position_sol: 1.0
+  max_daily_loss_sol: 5.0
+  max_open_positions: 10
+  min_signal_confidence: 0.5
+  min_signal_strength: 0.3
+  stop_loss_bps: 500
+  take_profit_bps: 1000
+
+execution:
+  default_slippage_bps: 100
+  default_priority_fee: 5000
+  max_retries: 3
+  retry_backoff_seconds: 2
